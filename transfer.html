@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyBank - Transfer</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 20px auto; }
+        input { margin: 10px 0; width: 100%; padding: 8px; }
+        .error { color: red; display: none; }
+    </style>
+</head>
+<body>
+    <a href="dashboard.html">← Back to Dashboard</a>
+    <h1>Transfer Funds</h1>
+
+    <form>
+        <label>From Account:</label>
+        <select>
+            <option>Checking ($5,245.67)</option>
+            <option>Savings ($12,450.89)</option>
+        </select><br>
+
+        <label>To:</label><br>
+        <input type="radio" name="recipient" checked> New Recipient
+        <input type="radio" name="recipient"> Saved Recipient<br><br>
+
+        <label>Account Number:</label>
+        <input type="text" placeholder="Enter account number"><br>
+
+        <label>Amount ($):</label>
+        <input type="number" id="amount"><br>
+
+        <p class="error" id="amountError">Amount exceeds available balance.</p>
+
+        <button type="button" onclick="validateTransfer()">Review Transfer</button>
+    </form>
+
+    <script>
+        function validateTransfer() {
+            if (document.getElementById("amount").value > 5245.67) {
+                document.getElementById("amountError").style.display = 'block';
+            } else {
+                window.location.href = 'transfer-confirm.html';
+            }
+        }
+    </script>
+</body>
+</html>
