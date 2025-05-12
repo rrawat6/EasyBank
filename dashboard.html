@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyBank - Dashboard</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; }
+        .quick-actions { display: flex; gap: 20px; margin: 20px 0; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, User!</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a> |
+            <a href="transfer.html">Transfers</a> |
+            <a href="payments.html">Payments</a> |
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Account Summary</h2>
+        <p>Checking: $5,245.67</p>
+        <p>Savings: $12,450.89</p>
+    </section>
+
+    <div class="quick-actions">
+        <button onclick="window.location.href='transfer.html'">Transfer Money</button>
+        <button onclick="window.location.href='payments.html'">Pay Bill</button>
+    </div>
+
+    <section>
+        <h2>Recent Transactions</h2>
+        <ul>
+            <li>Amazon -$45.67</li>
+            <li>Deposit +$1,200.00</li>
+        </ul>
+    </section>
+</body>
+</html>
