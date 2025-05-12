@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EasyBank - Confirm Transfer</title>
-    <style>
-        body { font-family: Arial; max-width: 600px; margin: 20px auto; }
-        .success { color: green; }
-    </style>
+  <title>Transfer Confirmation - EasyBank</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Review Your Transfer</h1>
-    <p><strong>From:</strong> Checking ($5,245.67)</p>
-    <p><strong>To:</strong> John Doe (***1234)</p>
-    <p><strong>Amount:</strong> $100.00</p>
-
-    <button onclick="window.location.href='transfer-success.html'">Confirm</button>
-    <button onclick="window.location.href='transfer.html'">Cancel</button>
+  <div class="header">
+    <h1>EasyBank</h1>
+  </div>
+  <div class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="payments.html">Payments</a>
+    <a href="transfer.html">Transfer</a>
+    <a href="support.html">Support</a>
+  </div>
+  <div class="container">
+    <h2>Confirm Transfer</h2>
+    <p>You're about to transfer ₹5,000 to John Doe.</p>
+    <a href="transfer-success.html" class="button">Confirm</a>
+  </div>
 </body>
 </html>
