@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyBank - Login</title>
+    <style>
+        body { font-family: Arial; max-width: 400px; margin: 50px auto; }
+        .error { color: red; display: none; }
+    </style>
+</head>
+<body>
+    <h1>EasyBank</h1>
+    <form>
+        <label>Email:</label><br>
+        <input type="email" required><br><br>
+        
+        <label>Password:</label><br>
+        <input type="password" required><br>
+        
+        <p class="error" id="loginError">Invalid credentials. Try again.</p>
+        
+        <button type="button" onclick="document.getElementById('loginError').style.display='block'">
+            Login (Click to simulate error)
+        </button>
+        <button type="button" onclick="window.location.href='dashboard.html'">
+            Successful Login
+        </button>
+    </form>
+</body>
+</html>
