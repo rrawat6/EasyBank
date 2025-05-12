@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>EasyBank - Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>EasyBank - Dashboard</title>
+  <style>
+    /* Reuse the same styles as in login.html */
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome, User!</h1>
-        <nav>
-            <a href="dashboard.html">Dashboard</a> |
-            <a href="transfer.html">Transfers</a> |
-            <a href="payments.html">Payments</a> |
-            <a href="support.html">Support</a>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Account Summary</h2>
-        <p>Checking: $5,245.67</p>
-        <p>Savings: $12,450.89</p>
-    </section>
-
-    <div class="quick-actions">
-        <button onclick="window.location.href='transfer.html'">Transfer Money</button>
-        <button onclick="window.location.href='payments.html'">Pay Bill</button>
-    </div>
-
-    <section>
-        <h2>Recent Transactions</h2>
-        <ul>
-            <li>Amazon -$45.67</li>
-            <li>Deposit +$1,200.00</li>
-        </ul>
-    </section>
+  <div class="header">
+    <h1>EasyBank</h1>
+  </div>
+  <div class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="payments.html">Payments</a>
+    <a href="transfer.html">Transfer</a>
+    <a href="support.html">Support</a>
+  </div>
+  <div class="container">
+    <h2>Welcome to your Dashboard</h2>
+    <p>Account Balance: $10,000</p>
+    <!-- Add more dashboard elements as needed -->
+  </div>
 </body>
 </html>
